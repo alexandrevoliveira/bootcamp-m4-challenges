@@ -1,0 +1,11 @@
+
+:root {
+    --rocket-color: #7159c1;
+    --secondary-color: #50fa7b;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
