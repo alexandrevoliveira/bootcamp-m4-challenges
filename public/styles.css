@@ -3,6 +3,7 @@
 :root {
     --rocket-color: #7159c1;
     --secondary-color: #50fa7b;
+    --primary-yellow: #F7DF1E;
 }
 
 * {
@@ -60,4 +61,92 @@ header {
 .links a:hover::after {
     width: 100%;
     transition: width 700ms ease-in-out;
+}
+
+
+/* === CARD === */
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    margin: 50px auto;
+
+    /* grid */
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    /* box-shadow */
+    box-shadow: 8px 8px 10px 4px rgba(0,0,0,0.8);
+
+    animation-name: up;
+    animation-timing-function: ease-out;
+    animation-duration: 700ms;
+}
+
+/* === ANIMATION === */
+
+@keyframes up {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+}
+
+/* === DETAILS === */
+
+.card-details {
+    padding: 32px;
+}
+
+.card-details .item{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.card-details .item:last-child {
+    border: none;
+}
+
+h3,
+.card-details .item div:first-child{
+    color: #777;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.card-details .item div:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.card-details h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--rocket-color);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.item:nth-child(2) div:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.item:nth-child(4) div:nth-child(2) span,
+.item:nth-child(6) div:nth-child(2) span {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--primary-yellow);
+    border-radius: 16px;
+    margin-top: 4px;
+    margin-right: 8px;
+    color: var(--rocket-color);
+    font-size: 16px;
 }
