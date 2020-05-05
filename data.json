@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Amanda",
+      "age": 857088000000,
+      "degree": "Ensino Superior Completo",
+      "class_type": "Presencial",
+      "occupation": "Direito Penal, História, Geografia",
+      "created_at": 1588688576686
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "Alexandre Victor",
+      "age": 818294400000,
+      "degree": "Ensino Médio Completo",
+      "class_type": "Presencial",
+      "occupation": "Programador",
+      "created_at": 1588689131731
+    }
+  ]
+}
