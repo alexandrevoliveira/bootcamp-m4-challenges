@@ -1,7 +1,8 @@
 const fs = require('fs')
 const data = require('./data.json')
-// create
+const { age, date } = require('./utils')
 
+// create
 exports.post = function(req, res) {
 
     const keys = Object.keys(req.body)
@@ -12,9 +13,9 @@ exports.post = function(req, res) {
         }
     }
 
-    let { avatar_url, name, age, degree, class_type, occupation } = req.body
+    let { avatar_url, name, birth, degree, class_type, services } = req.body
 
-    age = Date.parse(age)
+    birth = Date.parse(birth)
     const created_at = Date.now()
     const id = Number(data.teachers.length) + 1
     
@@ -23,10 +24,10 @@ exports.post = function(req, res) {
         id,
         avatar_url,
         name,
-        age,
+        birth,
         degree,
         class_type,
-        occupation,
+        services,
         created_at
     })
 
@@ -35,4 +36,48 @@ exports.post = function(req, res) {
 
         return res.redirect("/teachers")        
     })
+}
+
+// show
+exports.show = function(req, res) {
+    const { id } = req.params
+    
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id
+    })
+    
+    if (!foundTeacher) {
+        return res.send("Teacher not found")
+    }
+
+    const teacher = {
+        ...foundTeacher,
+        age: age(foundTeacher.birth),
+        services: foundTeacher.services.split(","),
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
+    }
+
+    return res.render("teachers/show", { teacher })
+
+}
+
+// edit
+
+exports.edit = function(req, res) {
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return id == teacher.id
+    })
+
+    if (!foundTeacher) {
+        return res.send("Teacher not found!")
+    }
+
+    const teacher = {
+        ...foundTeacher,
+        birth: date(foundTeacher.birth)
+    }
+
+    return res.render("teachers/edit", { teacher })
 }

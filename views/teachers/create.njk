@@ -18,55 +18,7 @@
 
         <h3>Professor</h3>
 
-        <div class="item">
-            <div>Avatar URL</div>
-            <input 
-                type="url" 
-                name="avatar_url" 
-                placeholder="http://"
-            >
-        </div>
-        
-        <div class="item">
-            <div>Nome</div>
-            <input 
-                type="text"
-                name="name"
-                placeholder="Nome completo"
-            >
-        </div>
-
-        <div class="item">
-            <div>Idade</div>
-            <input 
-                type="date" 
-                name="age"
-            >
-        </div>
-
-        <div class="item">
-            <div>Grau de Escolaridade</div>
-            <select name="degree">
-                <option value="Ensino Médio Completo" select>Ensino Médio Completo</option>
-                <option value="Ensino Superior Completo">Ensino Superior Completo</option>
-                <option value="Mestrado">Mestrado</option>
-                <option value="Doutorado">Doutorado</option>
-            </select>
-        </div>
-
-        <div class="item">
-            <div>Tipo de Aula</div>
-            <span><input type="radio" name="class_type" value="Presencial" checked>Presencial</span>
-            <span><input type="radio" name="class_type" value="À Distância">À Distância</span>
-        </div>
-
-        <div class="item">
-            <div>Acompanhamento</div>
-            <input 
-                type="text" 
-                name="occupation"
-                placeholder="Áreas de atuação">
-        </div>
+        {% include 'teachers/fields.njk' %}
 
         <button type="submit">Enviar</button>
 
