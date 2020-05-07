@@ -1,0 +1,54 @@
+<div class="item">
+    <div>Avatar URL</div>
+    <input 
+        type="url" 
+        name="avatar_url" 
+        placeholder="http://"
+        value="{{ teacher.avatar_url }}"
+    >
+</div>
+
+<div class="item">
+    <div>Nome</div>
+    <input 
+        type="text"
+        name="name"
+        placeholder="Nome completo"
+        value="{{ teacher.name }}"
+    >
+</div>
+
+<div class="item">
+    <div>Idade</div>
+    <input 
+        type="date" 
+        name="birth"
+        value="{{ teacher.birth }}"
+    >
+</div>
+
+<div class="item">
+    <div>Grau de Escolaridade</div>
+    <select name="degree">
+        <option value="Ensino Médio Completo" select>Ensino Médio Completo</option>
+        <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+        <option value="Mestrado">Mestrado</option>
+        <option value="Doutorado">Doutorado</option>
+    </select>
+</div>
+
+<div class="item">
+    <div>Tipo de Aula</div>
+    <span><input type="radio" name="class_type" value="{{ teacher.class_type }}" checked>Presencial</span>
+    <span><input type="radio" name="class_type" value="{{ teacher.class_type }}">À Distância</span>
+</div>
+
+<div class="item">
+    <div>Acompanhamento</div>
+    <input 
+        type="text" 
+        name="services"
+        placeholder="Áreas de atuação"
+        value="{{ teacher.services }}"
+    >
+</div>
