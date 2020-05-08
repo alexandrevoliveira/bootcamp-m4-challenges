@@ -29,16 +29,6 @@
       "class_type": "Presencial",
       "services": "Leigo, Dominado, Pai de Familia, Pinguço",
       "created_at": 1588702660840
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://source.unsplash.com/collection/8491653/400x400",
-      "name": "Z Alterado",
-      "birth": 949363200000,
-      "degree": "Ensino Superior Completo",
-      "class_type": "À Distância",
-      "services": "Passinho",
-      "created_at": 1588818852864
     }
   ]
 }
