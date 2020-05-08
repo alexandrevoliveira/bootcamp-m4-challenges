@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<form class="card" method="POST" action="/teachers">
+<div class="card">
 
     <section 
         class="card-image" 
@@ -16,13 +16,31 @@
 
     <section class="card-details">
 
-        <h3>Editar Professor</h3>
+        <form method="POST" action="/teachers?_method=PUT">
 
-        {% include 'teachers/fields.njk' %}
+            <h3>Editar Professor</h3>
+
+            {% include 'teachers/fields.njk' %}
+
+            <input 
+                type="hidden" 
+                name="id" 
+                value="{{teacher.id}}"
+            >
+        </form>
+
+        <form id="form-delete" method="POST" action="/teachers?_method=DELETE">
+            <input type="hidden" name="id" value = "{{teacher.id}}">
+            <button type="submit">Deletar</button>
+        </form>
 
     </section>
 
-</form>
+</div>
+
+
+
+
 
 
 {% endblock  %}
