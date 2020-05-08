@@ -185,14 +185,22 @@ form[class="card"] span {
     font-weight: bold;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     width: 50%;
     margin-top: 32px;
-    padding: 16px;
+    padding: 8px;
     font-size: 18px;
     border-radius: 16px;
     background-color: var(--rocket-color);
     color: white;
     position: relative;
     left: 25%;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
 }

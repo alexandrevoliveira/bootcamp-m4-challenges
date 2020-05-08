@@ -30,17 +30,53 @@
 <div class="item">
     <div>Grau de Escolaridade</div>
     <select name="degree">
-        <option value="Ensino Médio Completo" select>Ensino Médio Completo</option>
-        <option value="Ensino Superior Completo">Ensino Superior Completo</option>
-        <option value="Mestrado">Mestrado</option>
-        <option value="Doutorado">Doutorado</option>
+        <option 
+            value="Ensino Médio Completo" 
+            {% if teacher.degree == 'Ensino Médio Completo' %} 
+                select
+            {% endif %}>Ensino Médio Completo
+        </option>
+        <option 
+            value="Ensino Superior Completo" 
+            {% if teacher.degree == 'Ensino Superior Completo' %}
+                select
+            {% endif %}>Ensino Superior Completo
+        </option>
+        <option 
+            value="Mestrado" 
+            {% if teacher.degree == 'Mestrado' %}
+                select
+            {% endif %}>Mestrado
+        </option>
+        <option 
+            value="Doutorado" 
+            {% if teacher.degree == 'Doutorado' %}
+                select
+            {% endif %}>Doutorado
+        </option>
     </select>
 </div>
 
 <div class="item">
     <div>Tipo de Aula</div>
-    <span><input type="radio" name="class_type" value="{{ teacher.class_type }}" checked>Presencial</span>
-    <span><input type="radio" name="class_type" value="{{ teacher.class_type }}">À Distância</span>
+    <span>
+        <input
+        type="radio" 
+        name="class_type" 
+        value="Presencial" 
+        {% if teacher.class_type == 'Presencial' %}
+            checked
+        {% endif %}>Presencial
+    </span>
+    <span>
+        <input 
+        type="radio" 
+        name="class_type" 
+        value="À Distância" 
+        {% if teacher.class_type == 'À Distância' %}
+            checked
+        {% endif %}>À Distância
+    </span>
 </div>
 
 <div class="item">
@@ -52,3 +88,5 @@
         value="{{ teacher.services }}"
     >
 </div>
+
+<a href="" class="button">Salvar</a>
