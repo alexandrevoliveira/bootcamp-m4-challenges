@@ -2,18 +2,18 @@
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-0/p640x640/84098049_1557957837685420_7525106375622393856_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_eui2=AeFsxKanD9zyDNMjQs77jBVMPhb_Jcd3I-g-Fv8lx3cj6HHAgZAO9MoCLVpABfJlSaOWv6eVQA3_TWgmlLRuVpH-&_nc_ohc=yJuDwv7uMjwAX_kUbbq&_nc_ht=scontent.frec5-1.fna&_nc_tp=6&oh=04dc4b80f898158079cefb53c15f8b26&oe=5EDBA32B",
       "name": "Amanda",
       "birth": 857088000000,
-      "degree": "Ensino Superior Completo",
+      "degree": "Ensino Médio Completo",
       "class_type": "Presencial",
       "services": "Direito Penal, História, Geografia",
       "created_at": 1588688576686
     },
     {
       "id": 2,
-      "avatar_url": "http://google.com",
-      "name": "Alexandre Victor",
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/1915314_943178415759529_6035720889070553982_n.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_eui2=AeGJt2nPCjeH3wYl1cXwam76Yk8rKm4DMz1iTysqbgMzPed83r2c3EAj8aGzgmpvEV9E-drg-VX7aimGOUoA9q_z&_nc_ohc=MZCx_AkJw-AAX87xlja&_nc_ht=scontent.frec5-1.fna&oh=7c950a66d9cb986a9e5d07f5d0603b9c&oe=5EDCB363",
+      "name": "Alexandre Oliveira",
       "birth": 818294400000,
       "degree": "Ensino Médio Completo",
       "class_type": "Presencial",
@@ -22,11 +22,11 @@
     },
     {
       "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/8491653/400x400",
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t31.0-8/s960x960/15440584_1291543860904957_325904919232131061_o.jpg?_nc_cat=110&_nc_sid=85a577&_nc_eui2=AeHgAaGLBDzd49dcOyYgWeCUzPeTD16_SqjM95MPXr9KqIQcQRQWHndQqZf5ZiOCIROwFv4Ieb3P8oxj0bQMPF6L&_nc_ohc=XGjef49175QAX-wmSb_&_nc_ht=scontent.frec5-1.fna&_nc_tp=7&oh=1f470f1e0ce571462a6a6e42ca6568c5&oe=5EDB7CAC",
       "name": "Teobaldo do telhado de bilutetea",
       "birth": 809654400000,
       "degree": "Ensino Médio Completo",
-      "class_type": "Presencial",
+      "class_type": "À Distância",
       "services": "Leigo, Dominado, Pai de Familia, Pinguço",
       "created_at": 1588702660840
     }
