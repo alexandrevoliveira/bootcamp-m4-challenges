@@ -213,6 +213,7 @@ a.button {
 
 /* === INDEX TABLE === */
 
+
 .table-container {
     display: block;
     padding: 40px;
@@ -262,10 +263,25 @@ tbody tr td:first-child span {
     
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.create a {
     background-color: var(--rocket-color);
     padding: 8px 16px;
     border-radius: 4px;
     color: white;
     text-decoration: none;
+}
+
+.create a {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+/* === STUDENTS TABLE === */
+
+.students-table table tr,
+.students-table table tr td::after {
+    display: grid;
+    grid-template-columns: 30% 30% 20% 15%;
+    text-align: center;
 }
