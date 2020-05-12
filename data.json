@@ -1,4 +1,33 @@
 {
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/11225259_1026106537419775_3716420404932964857_n.jpg?_nc_cat=106&_nc_sid=85a577&_nc_eui2=AeGhTcovx0aoYtL_HETaYGaztgMXpgUHwq-2AxemBQfCr1w-c_MQeEVoPXVCxs84Mwc2cAxAw4L76UQ6JWDPyDFi&_nc_ohc=4Xv-ZNYvImMAX8x7Mj0&_nc_ht=scontent.frec5-1.fna&oh=63c33975a34fe8a3521f632a18f44b53&oe=5EDE6D63",
+      "name": "Antonio Ferreira",
+      "email": "onego@gmail.com",
+      "birth": 800150400000,
+      "school_year": "3º ano do ensino médio",
+      "hours": "60"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/14718626_1709217499398763_1853979516182900065_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_eui2=AeGK50h3R9JPZqLh5a9n4ZqvLNvyLTFTYoAs2_ItMVNigNBZiVt_VUKNDOtcoFE5kZLTsgSwcxfWfLnqFEYwGfBQ&_nc_ohc=VwVD2kqsyG0AX971NZs&_nc_ht=scontent.frec5-1.fna&oh=c9b12706e35308014fd56053d0182ae3&oe=5EE04B8F",
+      "name": "Guilherme Beltrao",
+      "email": "dauaro@gmail.com",
+      "birth": 946684800000,
+      "school_year": "5º ano do ensino fundamental",
+      "hours": "40"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t31.0-8/s960x960/17505242_1264977783579589_3984360536304496903_o.jpg?_nc_cat=102&_nc_sid=13bebb&_nc_eui2=AeGqSck4nK1RckmDG1uxNg6y7kEvdJlr67ruQS90mWvrugQGk6PwBmXyz3VulRhYrzW2opZcODbH45WZrJO5MgY7&_nc_ohc=3a_wNV0B6ocAX-UkA0H&_nc_ht=scontent.frec5-1.fna&_nc_tp=7&oh=af4b343e636e01fe9a1a61fadf501c55&oe=5EDEB141",
+      "name": "Alexandre Victor",
+      "email": "alexandrevoliveira30@gmail.com",
+      "birth": 818294400000,
+      "school_year": "3º ano do ensino médio",
+      "hours": "60"
+    }
+  ],
   "teachers": [
     {
       "id": 1,
