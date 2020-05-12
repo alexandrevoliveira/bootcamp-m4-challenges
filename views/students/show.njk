@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+    <title>Alunos</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+
+    <section 
+        class="card-image" 
+        style="background: url({{ student.avatar_url }}) no-repeat center center / cover">
+    </section>
+
+    <section class="card-details">
+
+        <h3>Estudante</h3>
+
+        <div class="item">
+            <div>Nome</div>
+            <div>{{ student.name }}</div>
+        </div>
+
+        <div class="item">
+            <div>Email</div>
+            <div>{{ student.email }}</div>
+        </div>
+
+        <div class="item">
+            <div>Idade</div>
+            <div>{{ student.age }}</div>
+        </div>
+
+        <div class="item">
+            <div>Aniversário</div>
+            <div>{{ student.birthday }}</div>
+        </div>
+
+        <div class="item">
+            <div>Ano Escolar</div>
+            <div><span>{{ student.school_year }}</span></div>
+        </div>
+
+        <div class="item">
+            <div>Carga Horária Semanal</div>
+            <div>{{ student.hours }} h</div>
+        </div>
+
+        <a href="/students/{{ student.id }}/edit" class="button">Editar</a>
+
+    </section>
+
+</div>
+
+
+{% endblock  %}
