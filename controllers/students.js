@@ -1,10 +1,23 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { age, date } = require('../utils')
+const { age, date, grade } = require('../utils')
 
 // index
 exports.index = function(req, res) {
-    return res.render("students/index", { students: data.students })
+    const students = data.students
+    
+    const filterStudents = students.filter(function(student){
+        if (student) {
+            student = {
+                ...student,
+                school_year: grade(student.school_year)
+            }
+            return student
+        }
+    })
+    console.log(filterStudents)
+
+    return res.render("students/index", { students: filterStudents })
 }
 
 exports.create = function(req, res) {

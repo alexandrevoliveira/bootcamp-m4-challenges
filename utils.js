@@ -25,5 +25,21 @@ module.exports = {
             birthDay: `${day}/${month}`,
             iso: `${year}-${month}-${day}`
         }
+    },
+    grade: function(string) {
+        const values = {
+            "5º ano do ensino fundamental": "5EF",
+            "6º ano do ensino fundamental": "6EF",
+            "7º ano do ensino fundamental": "7EF",
+            "8º ano do ensino fundamental": "8EF",
+            "9º ano do ensino fundamental": "9EF",
+            "1º ano do ensino médio": "1EM",
+            "2º ano do ensino médio": "2EM",
+            "3º ano do ensino médio": "3EM",
+        }
+
+        const formattedValue = values[string]
+
+        return formattedValue
     }
 }
